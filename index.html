@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algebra Calculators</title>
+
+  <h1>Algebraic Calculator</h1>
+
+<style>
+
+  h1 {
+    background: #004445;
+    height: 100px;
+    color: #faf5e4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    align-content: center;
+    margin: 0;
+  }
+
+  nav {
+    padding: 1rem 1rem 1rem 4rem;
+    display: flex;
+    background-color: #004445;
+    width: 300px;
+    max-height: fit-content;
+    position: relative;
+    font-size: 20px;
+    line-height: 3rem;
+    text-align: left;
+    z-index: 1000;
+  }
+
+  ul {
+    list-style-type: decimal-leading-zero;
+    padding: 0;
+    margin: 0;
+    color: #faf5e4;
+  }
+
+  a {
+    color: #faf5e4;
+    text-decoration: none;
+    align-items: right;
+  }
+
+  a:hover {
+    background-color: #2c786c;
+  }
+
+  head {
+    max-width: 1000px;
+  } 
+
+  body {
+    background-color: #2c786c;
+  }
+
+  iframe {
+    width: 125%;
+    height: calc(125vh - 50px); /* Full viewport height minus nav height */
+    border: none; /* Remove border for a seamless look */
+    display: block;
+    position: absolute; /* Fix the iframe to the top of the viewport */
+    top: 15%; /* Align to the top of the page */
+    left: 0; /* Align to the left edge */
+  }
+
+  .hidden {
+    display: none;
+  }
+
+</style>
+</head>
+
+<body>
+  <nav>
+  <div class="menu">
+    <ul class="nav-menu">
+      
+      <li class="nav-item"><a href="absoluteDifferenceCalc.html" data-target="absoluteDiff">Absolute Difference Calculator</a>
+      </li>
+      <li class="nav-item"><a href="absoluteValueCalc.html" data-target="absoluteValue">Absolute Value Calculator</a>
+      </li>
+      <li class="nav-item"><a href="addSubFractionsCalc.html" data-target="addSubFrac">Adding and Subtracting Fractions</a>
+      </li>
+      <li class="nav-item"><a href="completingTheSquareCalc.html" data-target="completingSquare">Completing the Square Calculator</a>
+      </li>
+      <li class="nav-item"><a href="cubeCalc.html" data-target="cube">Cube Calculator</a>
+      </li>
+      <li class="nav-item"><a href="cubeRootCalc.html" data-target="cubeRoot">Cube Root Calculator</a>
+      </li>
+      <li class="nav-item"><a href="cubicEquationCalc.html" data-target="cubicEquation">Cubic Equation Calculator</a>
+      </li>
+      <li class="nav-item"><a href="differenceOfTwoSquaresCalc.html" data-target="differenceTwo">Difference of Two Squares Calculator</a>
+      </li>
+      <li class="nav-item"><a href="dotProductCalc.html" data-target="dotProduct">Dot Product Calculator</a>
+      </li>
+      <li class="nav-item"><a href="exponentCalc.html" data-target="exponent">Exponents Calculator</a>
+      </li>
+      <li class="nav-item"><a href="fifthRootCalc.html" data-target="fifthRoot">Fifth Root Calculator</a>
+      </li>
+      <li class="nav-item"><a href="fourthRootCalc.html" data-target="fourthRoot">Fourth Root Calculator</a>
+      </li>
+      <li class="nav-item"><a href="fractionalExponentCalc.html" data-target="fracExponent">Fractional Exponents Calculator</a>
+      </li>
+      <li class="nav-item"><a href="fractionCalc.html" data-target="fraction">Fractions Calculator</a>
+      </li>
+      <li class="nav-item"><a href="largeExponentCalc.html" data-target="largeExpo">Large Exponents Calculator</a>
+      </li>
+      <li class="nav-item"><a href="logarithmicEquationCalc.html" data-target="logaEquation">Logarithm Equation Calculator</a>
+      </li>
+      <li class="nav-item"><a href="mixedNumbersCalc.html" data-target="mixed">Mixed Numbers Calculator</a>
+      </li>
+      <li class="nav-item"><a href="percentErrorCalc.html" data-target="percentError">Percent Error Calculator</a>
+      </li>
+      <li class="nav-item"><a href="percentageChangeCalc.html" data-target="percentageChange">Percentage Change Calculator</a>
+      </li>
+      <li class="nav-item"><a href="percentageDecreaseCalc.html" data-target="percentDec">Percentage Decrease Calculator</a>
+      </li>
+      <li class="nav-item"><a href="percentageDifferenceCalc.html" data-target="percentDiff">Percentage Difference Calculator</a>
+      </li>
+      <li class="nav-item"><a href="percentageIncreaseCalc.html" data-target="percentInc">Percentage Increase Calculator</a>
+      </li>
+      <li class="nav-item"><a href="perfectCubeCalc.html" data-target="perfectCube">Perfect Cube Calculator</a>
+      </li>
+      <li class="nav-item"><a href="quadraticFormulaCalc.html" data-target="quadraticFormula">Quadratic Formula Calculator</a>
+      </li>
+      <li class="nav-item"><a href="radicalsCalc.html" data-target="radicals">Root Calculator</a>
+      </li>
+      <li class="nav-item"><a href="simplifyRadicalExpressionCalc.html" data-target="simplifyRad">Simplify Radical Expressions Calculator</a>
+      </li>
+      <li class="nav-item"><a href="simplifyFractionCalc.html" data-target="simplifyFraction">Simplifying Fractions</a>
+      </li>
+      <li class="nav-item"><a href="solveForExponentCalc.html" data-target="solveExponent">Solve for Exponents Calculator</a>
+      </li>
+      <li class="nav-item"><a href="squareCalc.html" data-target="square">Square Calculator</a>
+      </li>
+      <li class="nav-item"><a href="squareRootCalc.html" data-target="squareRoot">Square Root Calculator</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+
+  <div class="image-container">
+  <iframe id="members" src="members.html" scrolling="no" onclick="showIframe('members.html')"></iframe>
+</div>
+
+</body>
+</html>
