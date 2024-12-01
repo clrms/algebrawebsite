@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfect Cube Calculator</title>
+  <style>
+body {
+  font-family:'Times New Roman', Times, serif;
+  background-color: #2c786c;
+}
+
+#calculator {
+  width: 50%;
+  height: fit-content;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #004445;
+  color: #faf5e4;
+  font-size: 25px;
+  vertical-align: middle;
+  text-align: center;
+  position: absolute;
+  margin-left: 50vh;
+}
+
+h2 {
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 25px;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+button {
+  padding: 10px 20px;
+  background-color: #f8b400;
+  color: black;
+  border-color: black;
+  border:none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 25px;
+}
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+section {
+    padding: 10px 20px;
+    margin-top: 50px;
+  }
+
+  </style>
+
+<a href="index.html" style="display: inline-block;
+padding: 20px 40px; 
+background-color: #f8b400; 
+color: black; 
+text-decoration: none; 
+border-radius: 5px; 
+font-family:'Times New Roman', Times, serif; 
+font-size: 25px;
+position: fixed;">Home</a>
+</head>
+<body>
+
+<!-- Cube Calculator -->
+<section id="perfectCube">
+<div id="calculator">
+  <h2>Perfect Cubes</h2>
+  <p>
+    A cube of a number is the result of multiplying the number by itself three times. 
+    This calculator computes the cube of any number you enter. 
+    <br><br>
+    Input a number and click **Calculate Cube** to get the result.
+  </p>
+  <input type="number" id="cubeNumber" placeholder="Enter a number">
+  <button onclick="calculateCube()">Calculate Cube</button>
+  <div id="resultskibidi4"></div>
+</div>
+</section>
+
+<script>
+function calculateCube() {
+  var number = parseFloat(document.getElementById("cubeNumber").value);
+
+  if (isNaN(number)) {
+    document.getElementById("resultskibidi4").textContent = "Invalid input. Please enter a valid number.";
+    return;
+  }
+
+  var cube = number * number * number;
+  document.getElementById("resultskibidi4").textContent = "The cube of " + number + " is: " + cube;
+}
+</script>
+
+</body>
+</html>
+ 
