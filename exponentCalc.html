@@ -76,7 +76,7 @@ position: fixed;">Home</a>
 
   <section id="exponent">
   <div id="calculator">
-    <h2>Exponent Calculator</h2>
+    <h1>Exponent Calculator</h1>
     <label for="base">Base:</label>
     <input type="number" id="base" placeholder="Enter base">
     <label for="exponent">Exponent:</label>
@@ -87,7 +87,7 @@ position: fixed;">Home</a>
   </section>
   
       <script>
-        function calculate() {
+         function calculate() {
             // Get the values from the input fields
             const base = parseFloat(document.getElementById("base").value);
             const exponent = parseFloat(document.getElementById("exponent").value);
@@ -96,7 +96,7 @@ position: fixed;">Home</a>
             const result = Math.pow(base, exponent);
 
             // Display the result in the paragraph
-            document.getElementById("result").textContent = `Result: ${result}`;
+            document.getElementById("result").textContent = Result: ${result};
         }
       </script>
       
